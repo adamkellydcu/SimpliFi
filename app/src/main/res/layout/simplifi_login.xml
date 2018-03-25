@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+    android:background="#42a5f5"
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="@+id/TextView_Password"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <!-- <EditText
         android:id="@+id/EditText_Login_UserName"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -34,9 +34,23 @@
         app:layout_constraintBottom_toTopOf="@+id/TextView_Password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextView_Login" />
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Login" /> -->
 
     <EditText
+        android:id="@+id/EditText_Login_UserName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Login"/>
+
+    <!-- <EditText
         android:id="@+id/EditText_Login_Password"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -48,7 +62,35 @@
         app:layout_constraintBottom_toTopOf="@+id/Login_OK"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Password" /> -->
+
+    <EditText
+        android:id="@+id/EditText_Login_Password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toTopOf="@+id/Login_OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextView_Password" />
+
+
+
+
+<!--
+
+    android:shadowColor="#A7A89E"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="OK"
+
+    android:textColor="#0D0917"
+    android:textSize="30sp" -->
 
     <TextView
         android:id="@+id/TextView_Password"
@@ -62,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="@+id/Login_OK"
         app:layout_constraintStart_toStartOf="@+id/Login_OK"
         app:layout_constraintTop_toBottomOf="@+id/EditText_Login_UserName" />
-
+<!--
     <Button
         android:id="@+id/Login_OK"
         android:layout_width="wrap_content"
@@ -72,9 +114,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditText_Login_Password" />
+        app:layout_constraintTop_toBottomOf="@+id/EditText_Login_Password" /> -->
 
-    <ImageView
+    <Button
+        android:id="@+id/Login_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="OK"
+
+        android:textColor="#0D0917"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <!--<ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,6 +147,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/simplifi" />
+        app:srcCompat="@drawable/simplifi" /> -->
 
 </android.support.constraint.ConstraintLayout>
