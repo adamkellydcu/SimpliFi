@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/getURL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wifistatus_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi Status" />
+
+    <Button
+        android:id="@+id/WiFi_ON_Buttton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi ON" />
+
+    <Button
+        android:id="@+id/WiFi_OFF_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi OFF" />
+
+    <TextView
+        android:id="@+id/URL_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="URL Response" />
+
+    <Button
+        android:id="@+id/gettheURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET THE URL TEXT" />
+
+    <TextView
+        android:id="@+id/macaddresstext"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="TextView" />
+
+</LinearLayout>

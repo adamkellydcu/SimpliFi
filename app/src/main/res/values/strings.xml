@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">simpli-fi</string>
+    <string name="title_activity_settings">Setup Page</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        SimpliFi Setup.\n\n
+        TEXT HERE\n\n"
+        SimpliFi Account.\n\n
+        TEXT HERE\n\n
+        SimpliFi Contact.\n\n
+        TEXT HERE\n\n
+
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_simplifi__main__page">Simplifi Main Page</string>
+    <string name="title_activity_wi_fiswitch">WiFISwitch</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>
