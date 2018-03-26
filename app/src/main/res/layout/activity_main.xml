@@ -5,44 +5,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#42a5f5"
-    tools:context="dcu.simplifi.MainActivity">
+    tools:context="dcu.simplifi.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
-    <!--
-    <Button
-        android:id="@+id/bt_login_page"
+
+    <TextView
+        android:id="@+id/TextView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="User Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/EditText_Login_UserName"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- app:layout_constraintBottom_toTopOf="@+id/EditText_Login_UserName" -->
+    <!-- app:layout_constraintEnd_toEndOf="@+id/TextView_Password" -->
+    <!--app:layout_constraintStart_toStartOf="@+id/TextView_Password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" -->
+
+
+    <EditText
+        android:id="@+id/EditText_Login_UserName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/EditText_Login_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <!-- END OF USENAME INPUT -->
+
+    <TextView
+        android:id="@+id/TextView_Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="Wi-Fi Manager"
+        android:text="Password"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Login"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/EditText_Login_Password"
+        android:layout_width="350dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Password"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982" /> -->
+        app:layout_constraintVertical_bias="0.223" />
+
+    <!-- END OF PASSWORD INPUT -->
 
     <Button
-        android:id="@+id/bt_login_page"
+        android:id="@+id/Button_Login"
         android:layout_width="270dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="60dp"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="228dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Login"
+        android:textColor="#0D0917"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- END OF CLICK LOGIN BUTTON -->
+
+
+    <Button
+        android:id="@+id/Button_Register"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="156dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Register"
+        android:textColor="#0D0917"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/bt_login_page" />
+
+    <!-- END OF REGISTER BUTTON -->
+    <Button
+        android:id="@+id/bt_login_page"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+
+        android:layout_marginBottom="156dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A7A89E"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
         android:text="Wi-Fi Manager"
-
         android:textColor="#0D0917"
-        android:textSize="30sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- END OF WI-FI MANAGER BUTTON -->
+
 
     <!--
     <Button
@@ -58,30 +162,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" /> -->
 
-    <Button
-        android:id="@+id/Button_Login"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="300dp"
 
-        android:layout_marginTop="50dp"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A7A89E"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="Login"
-
-        android:textColor="#0D0917"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-<!--
+    <!--
     <Button
         android:id="@+id/Button_Register"
         android:layout_width="wrap_content"
@@ -96,30 +178,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.133" /> -->
 
-    <Button
-        android:id="@+id/Button_Register"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="200dp"
-
-        android:layout_marginTop="50dp"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A7A89E"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="Register"
-
-        android:textColor="#0D0917"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-<!--
+    <!--
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -130,7 +189,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/simplifi" /> -->
-
+    <!--
+       <Button
+           android:id="@+id/bt_login_page"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="8dp"
+           android:layout_marginTop="8dp"
+           android:text="Wi-Fi Manager"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.5"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.982" /> -->
 
 
 </android.support.constraint.ConstraintLayout>
