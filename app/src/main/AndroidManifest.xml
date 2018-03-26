@@ -30,6 +30,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Simplifi_Main_Page" />
         </activity>
+
+        <activity
+            android:name=".registered_devices"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Simplifi_Main_Page" />
+        </activity>
+
+
+
+
         <activity
             android:name=".SimpliFi_Account"
             android:label="@string/title_activity_settings"
