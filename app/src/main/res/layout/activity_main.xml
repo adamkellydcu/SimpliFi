@@ -120,11 +120,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toEndOf="@+id/bt_login_page" />
+        app:layout_constraintStart_toEndOf="@+id/bt_Device_Display" />
 
     <!-- END OF REGISTER BUTTON -->
     <Button
-        android:id="@+id/bt_login_page"
+        android:id="@+id/bt_Device_Display"
         android:layout_width="100dp"
         android:layout_height="30dp"
 
@@ -137,7 +137,7 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Wi-Fi Manager"
+        android:text="Device Display"
         android:textColor="#0D0917"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
