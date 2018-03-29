@@ -15,13 +15,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".Simplifi_Main_Page"
             android:label="@string/title_activity_settings"
@@ -91,6 +84,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".PostActivity"
+            android:label="PostActivity"
+            android:parentActivityName=".MainActivity">
+
+
+            <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+               <!-- <action android:name="dcu.simplifi.PostActivity.LAUNCH" /> -->
+            <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SimpliFi_Main" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
