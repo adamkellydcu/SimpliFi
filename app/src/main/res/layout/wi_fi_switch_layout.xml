@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/getURL"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#42a5f5"
-    >
+    android:orientation="vertical">
 
 
     <TextView
@@ -18,40 +19,58 @@
         android:id="@+id/macaddresstext"
         android:layout_width="match_parent"
         android:layout_height="32dp"
-        android:text="TEXT VIEW" />
+        android:text="TEXT VIEW"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <Button
         android:id="@+id/gettheURL"
         android:layout_width="270dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="30dp"
-        android:text="GET THE URL TEXT"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A7A89E"
-        android:shadowDx="0"
-        android:shadowDy="0"
         android:layout_gravity="center_horizontal"
-        android:shadowRadius="5"/>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/getURL2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-    <Button
-        android:id="@+id/WiFi_ON_Button"
-        android:layout_width="270dp"
-        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A7A89E"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:layout_gravity="center_horizontal"
-        android:text="WiFi ON" />
+        android:text="GET THE URL TEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
 
-    <!--<Button
+        android:id="@+id/getURL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/WiFi_ON_Button"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="WiFi ON"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/URL_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+        <!--<Button
         android:id="@+id/WiFi_ON_Button"
         android:layout_marginBottom="300dp"
 
@@ -68,18 +87,47 @@
         android:id="@+id/WiFi_OFF_Button"
         android:layout_width="270dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="300dp"
+        android:layout_gravity="center_horizontal"
 
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
         android:background="@drawable/buttonshape"
         android:shadowColor="#A7A89E"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:layout_gravity="center_horizontal"
-        android:text="WiFi OFF" />
+        android:text="WiFi OFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
 
-    </LinearLayout>
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Location Of Device"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/URL_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
     <!--
     <Button
         android:id="@+id/WiFi_OFF_Button"
@@ -98,10 +146,9 @@
         android:id="@+id/URL_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2500dp"
-        android:layout_marginTop="100dp"
-        android:text="URL Response" />
+        android:text="URL Response"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp" />
 
 
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

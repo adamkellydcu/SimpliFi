@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#42a5f5"
+    tools:context="dcu.simplifi.PostActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/TextView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/posEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/posEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="306dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Login" />
+
+
+    <TextView
+        android:id="@+id/TextView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Position"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/posEditTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTxt" />
+
+
+    <EditText
+        android:id="@+id/teamEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toTopOf="@+id/macEditTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posEditTxt" />
+
+
+    <TextView
+        android:id="@+id/TextView_Team"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:text="Team"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Password"
+        app:layout_constraintTop_toBottomOf="@+id/posEditTxt" />
+
+
+    <TextView
+        android:id="@+id/TextView_MAC"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="58dp"
+        android:text="MAC"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="@+id/TextView_Team"
+        app:layout_constraintTop_toTopOf="@+id/teamEditTxt" />
+
+    <EditText
+        android:id="@+id/macEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/buttonshape"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        android:textColor="#0D0917"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamEditTxt" />
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="37dp"
+        android:layout_marginStart="25dp"
+
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A7A89E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Save"
+        android:textColor="#0D0917"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/macEditTxt" />
+
+
+</android.support.constraint.ConstraintLayout>
+
